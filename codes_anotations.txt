@@ -1,0 +1,9 @@
+{images.map((item, index) => 
+    <div className="text-center home-item w-100" key={index}>
+        <a href="">
+            <img src={item.image} className="img-fluid" alt="" />
+            <p className="mb-0 pl-2 pt-2">{item.name}</p>
+            <p className="mb-0 pl-2">{item.xy}</p>
+        </a>
+    </div>
+)}

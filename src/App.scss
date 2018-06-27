@@ -1,0 +1,220 @@
+// Fonts Default Site
+// Comfortaa
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+// Slick Carousel
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// Cores
+$black: #000;
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+}
+
+.navbar {
+  border-top: 1px solid #000;
+  .navbar-toggler {
+    border: 0;
+  }
+  .menu {
+    li {
+      &.active {
+        border-bottom: 1px solid $black;
+      }
+      a {
+        &.nav-link {
+          padding: 0 1rem;
+        }
+        &:hover {
+          @extend li.active;
+        }
+        color: $black !important;
+      }
+      margin-right: 2px;
+    }
+  }
+}
+
+.home {
+  .home-gallery {
+    .home-item {
+      a {
+        text-decoration: none;
+        color: $black;
+        outline: none !important;
+        img {
+          margin: 0 auto; //max-width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .works-gallery {
+    -moz-column-width: calc(100% / 4);
+    -webkit-column-width: calc(100% / 4);
+    column-width: calc(100% / 4);
+
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    .works-item {
+      padding-bottom: 15px;
+      break-inside: avoid-column;
+      a {
+        text-decoration: none;
+        color: $black;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.footer {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    .logo {
+      width: 50%;
+    }
+    .navbar {
+      position: unset !important;
+      border-top: 0;
+      padding: .5rem 0;
+      .navbar-toggler {
+        position: absolute;
+        top: 28px;
+        right: 5px;
+        &:focus {
+          outline: 0;
+        }
+      }
+      .menu {
+        padding-top: 25px;
+        .nav-item {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 10px 0;
+          &:active {
+            border-radius: 5px;
+            background-color: #383838;
+            .nav-link {
+              color: #fff !important;
+            }
+          }
+          &.active {
+            border-bottom: 0;
+            border-radius: 5px;
+            background-color: #383838;
+            .nav-link {
+              color: #fff !important;
+            }
+          }
+          .nav-link {
+            &:hover {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .works {
+    .works-gallery {
+      -moz-column-count: 2 !important;
+      -webkit-column-count: 2 !important;
+      column-count: 2 !important;
+      .works-item {
+        padding-bottom: 25px;
+        a {
+          p {
+            text-align: center;
+            background-color: #383838;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    position: relative;
+    .logo {
+      width: 70%;
+    }
+    .navbar {
+      position: unset !important;
+      border-top: 0;
+      padding: .5rem 0;
+      .navbar-toggler {
+        position: absolute;
+        top: 12px;
+        right: 5px;
+        &:focus {
+          outline: 0;
+        }
+      }
+      .menu {
+        padding-top: 15px;
+        .nav-item {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 10px 0;
+          &:active {
+            border-radius: 5px;
+            background-color: #383838;
+            .nav-link {
+              color: #fff !important;
+            }
+          }
+          &.active {
+            border-bottom: 0;
+            border-radius: 5px;
+            background-color: #383838;
+            .nav-link {
+              color: #fff !important;
+            }
+          }
+          .nav-link {
+            &:hover {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .works {
+    .works-gallery {
+      -moz-column-count: 1 !important;
+      -webkit-column-count: 1 !important;
+      column-count: 1 !important;
+      .works-item {
+        padding-bottom: 25px;
+        a {
+          p {
+            text-align: center;
+            background-color: #383838;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
